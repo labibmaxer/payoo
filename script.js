@@ -9,7 +9,7 @@ document.getElementById("login").addEventListener('click', function () {
     console.log(mobileNumberValueConverted , pinNumberValueConverted);
     
     if(mobileNumberValueConverted === mobileNumber && pinNumberValueConverted === pinNUmber){
-        console.log('all value are ok');
+        window.location.href="./home.html"
         
     }
     else {
