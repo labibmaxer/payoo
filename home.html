@@ -21,7 +21,7 @@
             <p class="text-[#08080880]">Available Balance</p>
         </div>
         <div>
-<button class="btn text-[#08080880]"><i class="fa-sharp-duotone fa-thin fa-arrow-left-from-bracket text-gray-700"></i>Default</button>
+<button class="btn text-[#08080880]"><i class="fa-sharp-duotone fa-thin fa-arrow-left-from-bracket text-gray-700"></i>Log out</button>
         </div>
     </div>
     <div class="max-w-lg mx-auto my-3 px-3">
@@ -29,11 +29,11 @@
         <p class="text-[#08080880]" >Enjoy easy and convenient financial services with us. <br> Cashout charge is low and </p>
     </div>
     <div class=" min-h-[200px] grid grid-cols-3 my-8 px-3 py-5 max-w-lg mx-auto gap-3  bg-white">
-        <div class="border-2 border-gray-200 rounded-2xl text-center  p-3">
+        <div id="addmoney-btn" class="border-2 border-gray-200 rounded-2xl text-center  p-3">
             <img class="mx-auto" src="assets/wallet1.png" alt="">
             <h2>Add money</h2>
         </div>
-            <div class="border-2 border-gray-200 rounded-2xl text-center p-3">
+            <div id="cashout-btn" class="border-2 border-gray-200 rounded-2xl text-center p-3">
             <img class="mx-auto" src="assets/send1.png" alt="">
             <h2>Cashout</h2>
         </div>
@@ -54,7 +54,7 @@
             <h2>Transactions</h2>
         </div>
     </div>
-    <div class="bg-[#f4f5f7] max-w-lg mx-auto ">
+    <div id="add-money-parent" class="bg-[#f4f5f7] max-w-lg mx-auto ">
         <h1 class="p-8 text-[25px] font-bold">Add Money</h1>
      <form action="" class="bg-white rounded-2xl p-8">
         <div class="">
@@ -86,9 +86,12 @@
 
            </div>
                        <button id="add-money-btn" type="button" class="btn bg-[#0874F2] font-bold text-white w-full rounded-xl  mt-10" >Add Money</button>
-    </div>
+      </form>
+                    </div>
     
-    </form>
+     <div id="cash-out-parent" class="bg-[#f4f5f7] max-w-lg mx-auto ">
+        <h1 class="p-8 text-[25px] font-bold">Cash out</h1>
+     </div>
     
     </body>
     

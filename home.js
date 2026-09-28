@@ -18,3 +18,14 @@ document.getElementById('add-money-btn').addEventListener('click', function(e){
         const totalBalance = availableBalance + AddamountNO 
          document.getElementById('available-balance').innerText = totalBalance
 })
+
+document.getElementById('addmoney-btn').addEventListener('click', function(){
+        document.getElementById('cash-out-parent').style.display = 'none'
+        document.getElementById('add-money-parent').style.display = 'block'
+
+        
+})
+document.getElementById('cashout-btn').addEventListener('click', function(){
+        document.getElementById('cash-out-parent').style.display = 'block'
+        document.getElementById('add-money-parent').style.display = 'none'
+})
