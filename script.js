@@ -13,7 +13,7 @@ document.getElementById("login").addEventListener('click', function () {
         
     }
     else {
-        console.log('invalid info ');
+        alert('invalid credentials')
         
     }
 });
