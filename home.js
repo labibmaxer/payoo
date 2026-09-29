@@ -1,5 +1,13 @@
 const validPin = 1234
 
+function getelement (id){
+        const inputField = document.getElementById('id')
+        const inputfieldValue = inputField.value
+        const inputfieldno = parseInt(inputfieldValue)
+        return inputfieldno
+}
+
+
 document.getElementById('add-money-btn').addEventListener('click', function(e){
         e.preventDefault()
         const bankNO = document.getElementById('add-bank-num').value 
@@ -16,7 +24,7 @@ document.getElementById('add-money-btn').addEventListener('click', function(e){
                 return;
         }
         const totalBalance = availableBalance + AddamountNO 
-         document.getElementById('available-balance').innerText = totalBalance
+       
 })
 
 document.getElementById('addmoney-btn').addEventListener('click', function(){
