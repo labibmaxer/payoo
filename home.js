@@ -24,7 +24,7 @@ document.getElementById('add-money-btn').addEventListener('click', function(e){
                 return;
         }
         const totalBalance = availableBalance + AddamountNO 
-       
+        setInnerText (totalBalance)
 })
 
 document.getElementById('addmoney-btn').addEventListener('click', function(){
