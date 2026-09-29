@@ -31,13 +31,29 @@ document.getElementById('add-money-btn').addEventListener('click', function(e){
 document.getElementById('addmoney-btn').addEventListener('click', function(){
         document.getElementById('cash-out-parent').style.display = 'none'
         document.getElementById('add-money-parent').style.display = 'block'
-
+        document.getElementById('transfer-money-parent').style.display = 'none'
+     document.getElementById("get-bonus-parent").style.display = 'none'
         
 })
 document.getElementById('cashout-btn').addEventListener('click', function(){
         document.getElementById('cash-out-parent').style.display = 'block'
         document.getElementById('add-money-parent').style.display = 'none'
+          document.getElementById('transfer-money-parent').style.display = 'none'
+        document.getElementById("get-bonus-parent").style.display = 'none'
 })
+document.getElementById('transfer-money-parent').addEventListener('click', function(){
+      document.getElementById('cash-out-parent').style.display = 'none'
+        document.getElementById('add-money-parent').style.display = 'none'
+          document.getElementById('transfer-money-parent').style.display = 'block'   
+          document.getElementById("get-bonus-parent").style.display = 'none'
+})
+document.getElementById("get-bonus-parent").addEventListener('click',function(){
+        document.getElementById("get-bonus-parent").style.display = 'block'
+          document.getElementById('cash-out-parent').style.display = 'none'
+        document.getElementById('add-money-parent').style.display = 'none'
+          document.getElementById('transfer-money-parent').style.display = 'block'  
+})
+
 
 document.getElementById('remove-withdraw-btn').addEventListener('click', function(e){
         e.preventDefault()
