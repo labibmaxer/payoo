@@ -32,7 +32,7 @@ document.getElementById('addmoney-btn').addEventListener('click', function(){
         document.getElementById('cash-out-parent').style.display = 'none'
         document.getElementById('add-money-parent').style.display = 'block'
         document.getElementById('transfer-money-parent').style.display = 'none'
-     document.getElementById("get-bonus-parent").style.display = 'none'
+    
         
 })
 document.getElementById('cashout-btn').addEventListener('click', function(){
