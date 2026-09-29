@@ -38,3 +38,17 @@ document.getElementById('cashout-btn').addEventListener('click', function(){
         document.getElementById('cash-out-parent').style.display = 'block'
         document.getElementById('add-money-parent').style.display = 'none'
 })
+
+document.getElementById('remove-withdraw-btn').addEventListener('click', function(e){
+        e.preventDefault()
+        const agentNO = document.getElementById('add-agent-no').value 
+     
+const AdamountNO = parseInt(document.getElementById('add-amount-withdraw').value);
+        const pin = parseInt(document.getElementById('remove-pin').value)
+        console.log(agentNO , AdamountNO , pin);
+        const availableBalance = parseInt(document.getElementById('available-balance').innerText)
+        
+        const totalnewBalance = availableBalance - AdamountNO
+        
+        document.getElementById('available-balance').innerText = totalnewBalance
+})
